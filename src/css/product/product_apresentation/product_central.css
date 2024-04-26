@@ -1,0 +1,10 @@
+#product_central{
+    height: 63%;
+    width: 75%;
+    background-color: blue;
+
+    position: fixed;
+    left: 0;
+
+    transition: left cubic-bezier(1, 0, 0, 1) 0.8s,  width cubic-bezier(1, 0, 0, 1) 0.8s;
+}

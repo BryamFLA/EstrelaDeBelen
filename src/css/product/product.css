@@ -1,0 +1,22 @@
+@import "assets.css";
+@import "btn_controller/btn_buy.css";
+@import "btn_controller/btns_controll_product.css";
+@import "btn_controller/btns_product.css";
+
+@import "product_apresentation/config_rigth.css";
+@import "product_apresentation/config_left.css";
+@import "product_apresentation/product_central.css";
+
+@import "assets_lateral/assets_default.css";
+
+#product{
+    height: 70%;
+    width: 100%;
+}
+
+#product_apresentation{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+}

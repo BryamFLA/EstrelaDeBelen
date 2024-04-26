@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "kapakana";
+  src: url(../../fonts/kapakana.ttf);
+}
+@font-face {
+  font-family: "julius";
+  src: url(../../fonts/julius.ttf);
+}
+
+#name_store h1 {
+  font-family: "kapakana";
+  font-size: 40px;
+  color: white;
+}
+#name_store {
+  margin: 30px;
+  margin-right: 5%;
+}

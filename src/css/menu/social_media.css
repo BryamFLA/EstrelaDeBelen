@@ -1,0 +1,15 @@
+#social-medias{
+    width: 90%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+#social-medias div{
+    width: 15%;
+    height: 40%;
+    background-color: white;
+    margin: 0 1rem;
+    border-radius: 100px;
+}

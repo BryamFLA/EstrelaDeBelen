@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Estrela de Belen</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://kit.fontawesome.com/af50315efb.js" crossorigin="anonymous"></script>
+    <script src="src/js/controller_product.js"></script>
+  </head>
+  <body>
+    <header>
+      <section id="menu">
+        <nav class="menu-hamburger">
+          <input id="icon-menu-hamburguer" type="checkbox" onclick="toggleMenu()"/>
+          <label for="icon-menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>          
+          <ul class="menu-hamburguer-elements show">
+            <div class="divisor"></div>
+            <li>
+              <div class="element">
+                <div class="element-img"></div>
+                <div class="element-text">
+                  <h2>Nome do Produto</h2>
+                  <h4>Descrição do Produto</h4>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="element">
+                <div class="element-img"></div>
+                <div class="element-text">
+                  <h2>Nome do Produto</h2>
+                  <h4>Descrição do Produto</h4>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="element">
+                <div class="element-img"></div>
+                <div class="element-text">
+                  <h2>Nome do Produto</h2>
+                  <h4>Descrição do Produto</h4>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="element">
+                <div class="element-img"></div>
+                <div class="element-text">
+                  <h2>Nome do Produto</h2>
+                  <h4>Descrição do Produto</h4>
+                </div>
+              </div>
+            </li>
+            <div class="divisor"></div>
+            <div  id="social-medias">
+              <div></div>
+              <div></div>
+            </div>
+          </ul>
+        </nav>
+      </section>
+      <section id="name_store">
+        <h1>Estrela de Belen</h1>
+      </section>
+    </header>
+    <section id="btn-buy">
+      <button id="btn-iwant">EU QUERO !!!</button>
+    </section>
+    <section id="product">
+      <div id="btns-controll">
+        <button id="fullscreen" class="icon_btns" onclick="toggleIconsFullSccreen()">
+          <i class="fa-solid fa-expand fa-2x" id="icon_fullscreen"></i>
+          <i class="fa-solid fa-compress fa-2x" id="icon_windowed" style="display: none"></i>
+        </button>
+        <button id="arrow" class="icon_btns" onclick="toggleIconsArrows()">
+          <i class="fa-solid fa-arrow-right fa-2x" id="icon_rigth"></i>
+          <i class="fa-solid fa-arrow-left fa-2x" id="icon_left" style="display: none"></i>
+        </button>
+      </div>
+      <div id="product_apresentation">
+        <div id="config_left" class="elements_assets">
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+        </div>
+        <div id="product_central"></div>
+        <div id="config_rigth" class="elements_assets">
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+            <button class="asset"></button>
+        </div>
+      </div>
+    </section>
+    <section id="assets">
+      <div class="assets_footer" onclick="toggleIconsMenu1()">
+        <button class="item_assets">Menu 1</button>
+        <i class="fa-solid fa-arrow-up fa-2x" id="icon_top_menu1"></i>
+        <i class="fa-solid fa-arrow-down fa-2x" id="icon_down_menu1" style="display: none"></i>
+        <div class="dropdown-content">
+          <button class="dropdown-item">Item 1</button>
+          <button class="dropdown-item">Item 2</button>
+          <button class="dropdown-item">Item 3</button>
+          <button class="dropdown-item">Item 4</button>
+          <button class="dropdown-item">Item 5</button>
+          <button class="dropdown-item">Item 1</button>
+          <button class="dropdown-item">Item 2</button>
+          <button class="dropdown-item">Item 3</button>
+          <button class="dropdown-item">Item 4</button>
+          <button class="dropdown-item">Item 5</button>
+        </div>
+      </div>
+
+      <div class="assets_footer" onclick="toggleIconsMenu2()">
+        <button class="item_assets">Menu 2</button>
+        <i class="fa-solid fa-arrow-up fa-2x" id="icon_top_menu2"></i>
+        <i class="fa-solid fa-arrow-down fa-2x" id="icon_down_menu2" style="display: none"></i>
+        <div class="dropdown-content">
+          <button class="dropdown-item">Item 1</button>
+          <button class="dropdown-item">Item 2</button>
+          <button class="dropdown-item">Item 3</button>
+          <button class="dropdown-item">Item 4</button>
+          <button class="dropdown-item">Item 5</button>
+          <button class="dropdown-item">Item 1</button>
+          <button class="dropdown-item">Item 2</button>
+          <button class="dropdown-item">Item 3</button>
+          <button class="dropdown-item">Item 4</button>
+          <button class="dropdown-item">Item 5</button>
+        </div>
+      </div>
+
+      <div class="assets_footer" onclick="toggleIconsMenu3()">
+        <button class="item_assets">Menu 3</button>
+        <i class="fa-solid fa-arrow-up fa-2x" id="icon_top_menu3"></i>
+        <i class="fa-solid fa-arrow-down fa-2x" id="icon_down_menu3" style="display: none"></i>
+        <div class="dropdown-content">
+          <button class="dropdown-item">Item 1</button>
+          <button class="dropdown-item">Item 2</button>
+          <button class="dropdown-item">Item 3</button>
+          <button class="dropdown-item">Item 4</button>
+          <button class="dropdown-item">Item 5</button>
+          <button class="dropdown-item">Item 1</button>
+          <button class="dropdown-item">Item 2</button>
+          <button class="dropdown-item">Item 3</button>
+          <button class="dropdown-item">Item 4</button>
+          <button class="dropdown-item">Item 5</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
