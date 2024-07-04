@@ -1,3 +1,4 @@
+
 function toggleIconsFullSccreen(){
   var icon_fullscreen = document.getElementById("icon_fullscreen"); 
   var icon_windowed = document.getElementById("icon_windowed");
