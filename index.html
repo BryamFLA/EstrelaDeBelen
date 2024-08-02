@@ -1,170 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Configurações padrões do sistema -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <!-- Nomes e imagens do site -->
-    <title>Estrela de Belen</title>
-    <link rel="icon" href="imgs/logos/logo.ico" type="image/x-icon">
-    <!-- Import de arquivos CSS, JS e FontAwesome-->
-    <link rel="stylesheet" href="styles.css" />
-    <script src="https://kit.fontawesome.com/af50315efb.js" crossorigin="anonymous"></script>
-    <script src="controllers.js"></script>
-  </head>
-  <body>
-    <header>
-      <section id="menu">
-        <nav class="menu-hamburger">
-          <input id="icon-menu-hamburguer" type="checkbox" onclick="toggleMenu()"/>
-          <label for="icon-menu-hamburguer">
-            <div class="menu">
-              <span class="hamburguer"></span>
-            </div>
-          </label>          
-          <ul class="menu-hamburguer-elements show">
-            <div class="divisor"></div>
-            <li>
-              <div class="element">
-                <div class="element-img"></div>
-                <div class="element-text">
-                  <h2>Nome do Produto</h2>
-                  <h4>Descrição do Produto</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="element">
-                <div class="element-img"></div>
-                <div class="element-text">
-                  <h2>Nome do Produto</h2>
-                  <h4>Descrição do Produto</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="element">
-                <div class="element-img"></div>
-                <div class="element-text">
-                  <h2>Nome do Produto</h2>
-                  <h4>Descrição do Produto</h4>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="element">
-                <div class="element-img"></div>
-                <div class="element-text">
-                  <h2>Nome do Produto</h2>
-                  <h4>Descrição do Produto</h4>
-                </div>
-              </div>
-            </li>
-            <div class="divisor"></div>
-            <div  id="social-medias">
-              <div></div>
-              <div></div>
-            </div>
-          </ul>
-        </nav>
-      </section>
-      <section id="name_store">
-        <h1>Estrela de Belen</h1>
-      </section>
-    </header>
-    <section id="btn-buy">
-      <button id="btn-iwant">EU QUERO !!!</button>
-    </section>
-    <section id="product">
-      <div id="btns-controll">
-        <button id="fullscreen" class="icon_btns" onclick="toggleIconsFullSccreen()">
-          <i class="fa-solid fa-expand fa-2x" id="icon_fullscreen"></i>
-          <i class="fa-solid fa-compress fa-2x" id="icon_windowed" style="display: none"></i>
-        </button>
-        <button id="arrow" class="icon_btns" onclick="toggleIconsArrows()">
-          <i class="fa-solid fa-arrow-right fa-2x" id="icon_rigth"></i>
-          <i class="fa-solid fa-arrow-left fa-2x" id="icon_left" style="display: none"></i>
-        </button>
-      </div>
-      <div id="product_apresentation">
-        <div id="config_left" class="elements_assets">
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-        </div>
-        <div id="product_central"></div>
-        <div id="config_rigth" class="elements_assets">
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-            <button class="asset"></button>
-        </div>
-      </div>
-    </section>
-    <section id="assets">
-      <div class="assets_footer" onclick="toggleIconsMenu1()">
-        <button class="item_assets">Menu 1</button>
-        <i class="fa-solid fa-arrow-up fa-2x" id="icon_top_menu1"></i>
-        <i class="fa-solid fa-arrow-down fa-2x" id="icon_down_menu1" style="display: none"></i>
-        <div class="dropdown-content">
-          <button class="dropdown-item">Item 1</button>
-          <button class="dropdown-item">Item 2</button>
-          <button class="dropdown-item">Item 3</button>
-          <button class="dropdown-item">Item 4</button>
-          <button class="dropdown-item">Item 5</button>
-          <button class="dropdown-item">Item 1</button>
-          <button class="dropdown-item">Item 2</button>
-          <button class="dropdown-item">Item 3</button>
-          <button class="dropdown-item">Item 4</button>
-          <button class="dropdown-item">Item 5</button>
-        </div>
-      </div>
 
-      <div class="assets_footer" onclick="toggleIconsMenu2()">
-        <button class="item_assets">Menu 2</button>
-        <i class="fa-solid fa-arrow-up fa-2x" id="icon_top_menu2"></i>
-        <i class="fa-solid fa-arrow-down fa-2x" id="icon_down_menu2" style="display: none"></i>
-        <div class="dropdown-content">
-          <button class="dropdown-item">Item 1</button>
-          <button class="dropdown-item">Item 2</button>
-          <button class="dropdown-item">Item 3</button>
-          <button class="dropdown-item">Item 4</button>
-          <button class="dropdown-item">Item 5</button>
-          <button class="dropdown-item">Item 1</button>
-          <button class="dropdown-item">Item 2</button>
-          <button class="dropdown-item">Item 3</button>
-          <button class="dropdown-item">Item 4</button>
-          <button class="dropdown-item">Item 5</button>
-        </div>
-      </div>
+<head>
+  <!-- Configurações padrões do sistema -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Nomes e imagens do site -->
+  <title>Estrela de Belen</title>
+  <link rel="icon" href="./assets/img/logos/logo.ico" type="image/x-icon">
+  <!-- Vinculo com arquivos externos -->
+  <link rel="stylesheet" href="./styles.css">
+  <script type="module" src="./controllers.js" defer></script>
+  <script src="https://kit.fontawesome.com/af50315efb.js" crossorigin="anonymous"></script>
+</head>
 
-      <div class="assets_footer" onclick="toggleIconsMenu3()">
-        <button class="item_assets">Menu 3</button>
-        <i class="fa-solid fa-arrow-up fa-2x" id="icon_top_menu3"></i>
-        <i class="fa-solid fa-arrow-down fa-2x" id="icon_down_menu3" style="display: none"></i>
-        <div class="dropdown-content">
-          <button class="dropdown-item">Item 1</button>
-          <button class="dropdown-item">Item 2</button>
-          <button class="dropdown-item">Item 3</button>
-          <button class="dropdown-item">Item 4</button>
-          <button class="dropdown-item">Item 5</button>
-          <button class="dropdown-item">Item 1</button>
-          <button class="dropdown-item">Item 2</button>
-          <button class="dropdown-item">Item 3</button>
-          <button class="dropdown-item">Item 4</button>
-          <button class="dropdown-item">Item 5</button>
+<body>
+  <section id="menu">
+    <div id="titulo">
+      <h1>PRODUTOS</h1>
+      <div id="menu-icone" onclick="attMenu()">
+        <div id="menu-topo"></div>
+        <div id="menu-meio"></div>
+        <div id="menu-baixo"></div>
+      </div>
+    </div>
+    <div id="cartoes">
+      <div class="cartao-produto">
+        <img src="./assets/img/img.svg" class="img-produto">
+        <div>
+          <h2 class="nome-cartao"> Nome do Produto </h2>
+          <h4 class="descricao-cartao">Descrição Simples</h4>
         </div>
       </div>
-    </section>
-  </body>
+      <div class="cartao-produto">
+        <img src="./assets/img/img.svg" class="img-produto">
+        <div>
+          <h2 class="nome-cartao"> Nome do Produto </h2>
+          <h4 class="descricao-cartao">Descrição Simples</h4>
+        </div>
+      </div>
+      <div class="cartao-produto">
+        <img src="./assets/img/img.svg" class="img-produto">
+        <div>
+          <h2 class="nome-cartao"> Nome do Produto </h2>
+          <h4 class="descricao-cartao">Descrição Simples</h4>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <header>
+    <h1 id="nome-loja">Estrela de Belem</h1>
+    <i class="fa-brands fa-instagram" id="instagran-icon"></i>
+    <button id="btn-euquero">Eu QUERO!!!</button>
+  </header>
+  <section id="produto">
+    <div id="apresentacao-produto">
+      <div id="produto-pedra"></div>
+      <div id="produto-corrente"></div>
+      <div id="produto-pindurico-cruz"></div>
+      <div id="produto-pindurico-centro"></div>
+      <div id="produto-pindurico-extra"></div>
+    </div>
+    <div id="seletores-pedra-corrente">
+      <div class="seletor" id="seletor-pedra">
+        <h5>PEDRAS</h5>
+        <div class="opcoes" id="cores">
+          <nav class="sombra baixo"></nav>
+          <nav class="sombra cima"></nav>          
+        </div>
+      </div>
+      <div class="seletor" id="seletor-corrente">
+        <h5>CORRENTES</h5>
+        <div class="opcoes" id="correntes">
+          <nav class="sombra baixo"></nav>
+          <nav class="sombra cima"></nav>
+        </div>
+      </div>
+      <div id="sombras dos seletors">
+      </div>
+    </div>
+    <div id="pinduricos">
+      <div class="pindurico" id="cruz">
+        <h5 class="pindurico-titulo">CRUZ</h5>
+        <div class="pindurico-caixa" id="cruz-caixa">
+          <div class="div-seta" onclick="inverterPinduricos('cruz')">
+            <div class="seta" id="seta-cruz"></div>
+          </div>
+          <div class="op-pinduricos" id="op-cruz">
+          </div>
+        </div>
+      </div>
+      <div class="pindurico" id="centro">
+        <h5 class="pindurico-titulo">CENTRO</h5>
+        <div class="pindurico-caixa" id="centro-caixa">
+          <div class="div-seta" onclick="inverterPinduricos('centro')">
+            <div class="seta" id="seta-centro"></div>
+          </div>
+          <div class="op-pinduricos" id="op-centro">
+          </div>
+        </div>
+      </div>
+      <div class="pindurico" id="extra">
+        <h5 class="pindurico-titulo">EXTRA</h5>
+        <div  class="pindurico-caixa" id="extra-caixa">
+          <div class="div-seta" onclick="inverterPinduricos('extra')">
+            <div class="seta" id="seta-extra"></div>
+          </div>
+          <div class="op-pinduricos" id="op-extra">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <h5>WHATS</h5>
+    <div id="qr-code"></div>
+  </footer>
+</body>
 </html>

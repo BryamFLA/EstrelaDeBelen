@@ -1,0 +1,27 @@
+#btn-euquero{
+    position: absolute;
+    left: 41vw;
+    top: 10vh;
+
+    width: 18vw;
+    height: 6vh;
+
+    border: 0;
+    border-radius: 100vw;
+    background-color: rgb(150, 150, 150);
+
+    color: white;
+    font-family: 'fontP';
+    font-size: 1.5vw;
+
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+#btn-euquero:hover{
+    left: 40vw;
+    top: 9.5vh;
+    width: 20vw;
+    height: 7vh;
+    font-size: 1.7vw;
+}

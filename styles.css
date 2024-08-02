@@ -1,6 +1,50 @@
-@import "./css/header/name_store.css";
-@import "./css/menu/menu.css";
-@import "./css/body_default.css";
-@import "./css/header/header.css";
-@import "./css/product/product.css";
-@import "./css/assets/assets_footer.css";
+@import url(./css/menu.css);
+@import url(./css/btn_quero.css);
+@import url(./css/apresentacao_produto.css);
+@import url(./css/seletores.css);
+@import url(./css/pinduricos.css);
+@import url(./css/qr_code.css);
+
+
+@font-face {
+    font-family: 'fontP';
+    src: url(./assets/fonts/julius.ttf);
+}
+@font-face {
+    font-family: 'fontS';
+    src: url(./assets/fonts/kapakana.ttf);
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    overflow: hidden;
+}
+
+#nome-loja{
+    position: absolute;
+    right: 1vw;
+    top: 1vw;
+
+    font-family: 'fontS';
+    font-size: 3vw;
+    
+    color: rgb(150, 150, 150);
+    margin: 0;
+}
+#instagran-icon{
+    position: absolute;
+    right: 1vw;
+    top: 5vw;
+    color: rgb(150, 150, 150);
+    font-size: 4vw;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+#instagran-icon:hover{
+    right: 0.75vw;
+    top: 4.75vw;
+    font-size: 4.5vw;
+}

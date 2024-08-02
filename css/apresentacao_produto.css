@@ -1,0 +1,58 @@
+#apresentacao-produto div{
+    position: absolute;
+    background-color: rgb(150, 150, 150);
+}
+
+#produto-pedra{
+    z-index: 1;
+
+    left: 37.5vw;
+    top: 23vh;
+
+    width: 25vw;
+    height: 50vh;
+}
+#produto-corrente{
+    z-index: 2;
+
+    left: 37vw;
+    top: 23vh;
+
+    width: 26vw;
+    height: 50vh;
+
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+}
+#produto-pindurico-cruz{
+    z-index: 3;
+
+    left: 37vw;
+    top: 23vh;
+
+    width: 10vw;
+    height: 10vw;
+
+    border-radius: 50%;
+}
+#produto-pindurico-centro{
+    z-index: 4;
+
+    width: 10vw;
+    height: 10vw;
+
+    left: 45vw;
+    top: 38vh;
+
+    border-radius: 50%;
+}
+#produto-pindurico-extra{
+    z-index: 5;
+
+    width: 10vw;
+    height: 10vw;
+
+    left: 53vw;
+    top: 52vh;
+
+    border-radius: 50%;
+}

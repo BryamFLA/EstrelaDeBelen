@@ -1,0 +1,90 @@
+.pindurico{
+    position: absolute;
+    top: 77vh;
+}
+.pindurico-titulo{
+    width: 70%;
+    text-align: center;
+    font-size: 1vw;
+    margin: 1vw;
+    font-family: 'fontP';
+    color: rgb(150, 150, 150);
+}
+.pindurico-caixa{
+    width: 8vw;
+    height: 12vh;
+
+    background-color: rgba(150, 150, 150, 0.15);
+    border-radius: 0.5vw;
+
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
+#cruz{
+    left: 33vw;
+}
+#centro{
+    left: 46vw;
+}
+#extra{
+    left: 59vw;
+}
+
+.div-seta{
+    height: 12vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.seta{
+    width: 1.5vw;
+    height: 3vw;
+    clip-path: polygon(0 45%, 50% 25%, 100% 45%, 100% 55%, 50% 35%, 0 55%);
+    background-color: rgb(150, 150, 150);
+    transition: all 0.2s ease-in-out;
+}
+.op-selecionado{
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(150, 150, 150);
+    border-radius: 0.4vw;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.op-pinduricos{
+    position: absolute;
+    width: 5.7vw;
+    height: 12vh;
+    background-color: rgba(150, 150, 150, 0.15);
+    z-index: 10;
+    border-radius: 0.4vw;
+    left: 0;
+    overflow: auto;
+    scrollbar-width: none;
+    z-index: -5;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.op-pinduricos div{
+    cursor: pointer;
+    position: absolute;
+    width: 5vw;
+    height: 5vw;
+    background-color: rgb(150, 150, 150);
+    border-radius: 0.4vw;
+    top: 0.3vw;
+    left: 0.38vw;
+
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+.op-pinduricos div:hover{
+    width: 5.2vw;
+    height: 5.2vw;
+    left: 0.28vw;
+}

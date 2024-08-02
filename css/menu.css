@@ -1,0 +1,122 @@
+#menu{
+    position: absolute;
+    top: 2vh;
+
+    width: 25vw;
+    height: 55vh;
+    overflow: hidden;
+    scrollbar-width: 0;
+}
+
+#titulo{
+    width: 15vw;
+    height: 6vh;
+
+    border-top-right-radius: 100vw;
+    border-bottom-right-radius: 100vw;
+    background-color: rgb(150, 150, 150);
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#titulo h1{
+    margin: 0;
+    font-size: 1.4vw;
+    font-family: 'fontP';
+    color: white;
+}
+
+#menu-icone{
+    width: 1.5vw;
+    height: 1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+}
+#menu-icone div{
+    position: relative;
+    width: 1.5vw;
+    height: 0.4vh;
+    margin: 0.3vh 0;
+    border-radius: 100vw;
+    background-color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+#cartoes{
+    position: relative;
+    top:-60vh;
+    width: 22vw;
+    height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+
+    transition: all 0.5s ease-in-out;
+}
+.cartao-produto{
+    width: 20vw;
+    height: 10vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.img-produto{
+    width: 4vw;
+    height: 4vw;
+
+    padding: 0.8vw;
+    margin-left: 0.5vw;
+
+    border-radius: 1vw;
+    background-color: rgb(150, 150, 150);
+
+    transition: all 0.3s ease-in-out;
+}
+.cartao-produto:hover .img-produto{
+    width: 4.5vw;
+    height: 4.5vw;
+}
+
+.cartao-produto div{
+    width: 22vw;
+    height: 8.5vh;
+    padding-left: 1vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    border-top-right-radius: 1vw;
+    border-bottom-right-radius: 1vw;
+    box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
+    background-color: rgba(35, 35, 35, 0.3);
+}
+.nome-cartao{
+    margin: 0;
+    color: white;
+    font-family: 'fontS';
+    font-size: 1.7vw;
+
+    transition: all 0.2s ease-in-out;
+}
+.cartao-produto:hover .nome-cartao{
+    font-size: 2vw;
+}
+
+.descricao-cartao{
+    margin: 0;
+    color: white;
+    font-family: 'fontP';
+    font-size: 0.8vw;
+}

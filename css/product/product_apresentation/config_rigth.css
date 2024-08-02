@@ -1,9 +1,0 @@
-#config_rigth{
-    height: 63%;
-    width: 25%;
-
-    position: fixed;
-    right: 0;
-
-    transition: right cubic-bezier(1, 0, 0, 1) 0.8s;
-}
