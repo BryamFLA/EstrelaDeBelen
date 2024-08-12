@@ -1,4 +1,4 @@
-#menu{
+#menu {
     position: absolute;
     top: 2vh;
 
@@ -8,7 +8,7 @@
     scrollbar-width: 0;
 }
 
-#titulo{
+#titulo {
     width: 15vw;
     height: 6vh;
 
@@ -21,14 +21,15 @@
     align-items: center;
     justify-content: space-around;
 }
-#titulo h1{
+
+#titulo h1 {
     margin: 0;
     font-size: 1.4vw;
     font-family: 'fontP';
     color: white;
 }
 
-#menu-icone{
+#menu-icone {
     width: 1.5vw;
     height: 1.5vw;
     display: flex;
@@ -38,7 +39,8 @@
 
     cursor: pointer;
 }
-#menu-icone div{
+
+#menu-icone div {
     position: relative;
     width: 1.5vw;
     height: 0.4vh;
@@ -48,9 +50,9 @@
     transition: all 0.3s ease-in-out;
 }
 
-#cartoes{
+#cartoes {
     position: relative;
-    top:-60vh;
+    top: -100vh;
     width: 22vw;
     height: 50vh;
 
@@ -63,7 +65,8 @@
 
     transition: all 0.5s ease-in-out;
 }
-.cartao-produto{
+
+.cartao-produto {
     width: 20vw;
     height: 10vh;
 
@@ -71,9 +74,10 @@
     flex-direction: row;
     align-items: center;
 }
-.img-produto{
-    width: 4vw;
-    height: 4vw;
+
+.img-produto {
+    width: 5vw;
+    height: 5vw;
 
     padding: 0.8vw;
     margin-left: 0.5vw;
@@ -83,12 +87,13 @@
 
     transition: all 0.3s ease-in-out;
 }
-.cartao-produto:hover .img-produto{
-    width: 4.5vw;
-    height: 4.5vw;
+
+.cartao-produto:hover .img-produto {
+    width: 5.5vw;
+    height: 5.5vw;
 }
 
-.cartao-produto div{
+.cartao-produto div {
     width: 22vw;
     height: 8.5vh;
     padding-left: 1vw;
@@ -96,13 +101,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
     border-top-right-radius: 1vw;
     border-bottom-right-radius: 1vw;
     box-shadow: 0 0 0.5vw rgba(0, 0, 0, 0.5);
     background-color: rgba(35, 35, 35, 0.3);
 }
-.nome-cartao{
+
+.nome-cartao {
     margin: 0;
     color: white;
     font-family: 'fontS';
@@ -110,13 +116,74 @@
 
     transition: all 0.2s ease-in-out;
 }
-.cartao-produto:hover .nome-cartao{
+
+.cartao-produto:hover .nome-cartao {
     font-size: 2vw;
 }
 
-.descricao-cartao{
+.descricao-cartao {
     margin: 0;
     color: white;
     font-family: 'fontP';
     font-size: 0.8vw;
+}
+
+@media(max-width:425px) {
+    #menu {
+        width: 70vw;
+        z-index: 1;
+    }
+
+    #titulo {
+        width: 10vw;
+    }
+
+    #titulo h1 {
+        display: none;
+    }
+
+    #menu-icone {
+        width: 8vw;
+        height: 8vw;
+    }
+
+    #menu-icone div {
+        width: 6vw;
+        margin-right: 2vw;
+    }
+
+    #cartoes {
+        width: 65vw;
+    }
+
+    .cartao-produto {
+        width: 60vw;
+    }
+
+    .img-produto {
+        width: 18vw;
+        height: 18vw;
+        border-radius: 2vw;
+    }
+
+    .cartao-produto:hover .img-produto {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    .cartao-produto div {
+        width: 60vw;
+        padding-left: 2vw;
+        border-top-right-radius: 2vw;
+        border-bottom-right-radius: 2vw;
+    }
+    .nome-cartao{
+        font-size: 7vw;
+    }
+    .cartao-produto:hover .nome-cartao {
+        font-size: 7vw;
+    }
+    .descricao-cartao{
+        font-size: 2.5VW;
+    }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
   <!-- Configurações padrões do sistema -->
@@ -48,27 +48,37 @@
         </div>
       </div>
     </div>
-    </div>
   </section>
   <header>
     <h1 id="nome-loja">Estrela de Belem</h1>
     <i class="fa-brands fa-instagram" id="instagran-icon"></i>
     <button id="btn-euquero" onclick="sendMessage()">Eu QUERO!!!</button>
   </header>
+  <section id="controller-produto">
+    <div onclick="showCorrentes()">
+      <i class="fa-solid fa-arrow-left" id="arrow-left"></i>
+    </div>
+    <div id="expand-compress"  onclick="expandCompress()">
+      <i class="fa-solid fa-expand"></i><!--Mudar entre compress e expand-->
+    </div>
+    <div onclick="showStones()">
+      <i class="fa-solid fa-arrow-right" id="arrow-right"></i>
+    </div>
+  </section>
   <section id="produto">
     <div id="apresentacao-produto">
-      <div id="produto-pedra"></div>
-      <div id="produto-corrente"></div>
-      <div id="produto-pindurico-cruz"></div>
-      <div id="produto-pindurico-centro"></div>
-      <div id="produto-pindurico-extra"></div>
+      <div id="produto-pedra" class="produto"></div>
+      <div id="produto-corrente" class="produto"></div>
+      <div id="produto-pindurico-cruz" class="produto"></div>
+      <div id="produto-pindurico-centro" class="produto"></div>
+      <div id="produto-pindurico-extra" class="produto"></div>
     </div>
     <div id="seletores-pedra-corrente">
       <div class="seletor" id="seletor-pedra">
         <h5>PEDRAS</h5>
         <div class="opcoes" id="cores">
           <nav class="sombra baixo"></nav>
-          <nav class="sombra cima"></nav>          
+          <nav class="sombra cima"></nav>
         </div>
       </div>
       <div class="seletor" id="seletor-corrente">
@@ -104,7 +114,7 @@
       </div>
       <div class="pindurico" id="extra">
         <h5 class="pindurico-titulo">EXTRA</h5>
-        <div  class="pindurico-caixa" id="extra-caixa">
+        <div class="pindurico-caixa" id="extra-caixa">
           <div class="div-seta" onclick="inverterPinduricos('extra')">
             <div class="seta" id="seta-extra"></div>
           </div>
@@ -119,4 +129,5 @@
     <div id="qr-code"></div>
   </footer>
 </body>
+
 </html>

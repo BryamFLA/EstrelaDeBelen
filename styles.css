@@ -4,6 +4,7 @@
 @import url(./css/seletores.css);
 @import url(./css/pinduricos.css);
 @import url(./css/qr_code.css);
+@import url(./css/contorller-produto.css);
 
 
 @font-face {
@@ -47,4 +48,22 @@ body{
     right: 0.75vw;
     top: 4.75vw;
     font-size: 4.5vw;
+}
+
+@media (max-width: 425px){
+    #nome-loja{
+        right: 3vw;
+        top: 3vw;
+        font-size: 10vw;
+    }
+    #instagran-icon{
+        right: 2vw;
+        top: 15vw;
+        font-size: 10vw;
+    }
+    #instagran-icon:hover{
+        right: 2vw;
+        top: 15vw;
+        font-size: 10vw;
+    }
 }

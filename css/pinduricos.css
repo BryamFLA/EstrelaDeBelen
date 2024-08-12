@@ -1,6 +1,7 @@
 .pindurico{
     position: absolute;
     top: 77vh;
+    z-index: 20;
 }
 .pindurico-titulo{
     width: 70%;
@@ -60,7 +61,7 @@
     width: 5.7vw;
     height: 12vh;
     background-color: rgba(150, 150, 150, 0.15);
-    z-index: 10;
+    z-index: 15;
     border-radius: 0.4vw;
     left: 0;
     overflow: auto;
@@ -87,4 +88,46 @@
     width: 5.2vw;
     height: 5.2vw;
     left: 0.28vw;
+}
+
+@media (max-width: 425px) {
+    .pindurico-titulo{
+        font-size: 3.5vw;
+    }
+    .pindurico-caixa{
+        width: 30vw;
+        height: 12vh;
+
+        border-radius: 2vw;
+    }
+    #cruz{
+        left: 3vw;
+    }
+    #centro{
+        left: 35vw;
+    }
+    #extra{
+        left: 67vw;
+    }
+    .seta{
+        width: 3vw;
+        height: 6vw;
+    }
+    .op-selecionado{
+        width: 15vw;
+        height: 15vw;
+    }
+    .op-pinduricos{
+        width: 21vw;
+    }
+    .op-pinduricos div{
+        width: 15vw;
+        height: 15vw;
+        left: 3vw;
+    }
+    .op-pinduricos div:hover{
+        width: 15vw;
+        height: 15vw;
+        left: 3vw;
+    }
 }

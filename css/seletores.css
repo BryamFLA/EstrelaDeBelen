@@ -10,6 +10,8 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    transition: all 0.3s ease-in-out;
 }
 
 #seletor-pedra {
@@ -69,4 +71,37 @@
 .cima {
     top: 6.9vh;
     background: linear-gradient(0deg, rgba(2, 0, 36, 0) 30%, white 100%);
+}
+
+@media (max-width: 425px) {
+    .seletor{
+        top: 23vh;
+        width: 20vw;
+        height: 50vh;
+    }
+    #seletor-pedra{
+        left: -25vw;
+    }
+    #seletor-corrente{
+        right: 1.5vw;
+    }
+    .seletor h5{
+        font-size: 3.5vw;
+    }
+    .opcoes div{
+        width: 15vw;
+        height: 15vw;
+    }
+    .opcoes div:hover {
+        width: 15vw;
+        height: 15vw;
+    }
+
+    /*Sombras*/
+    .sombra{
+        width: 17vw;
+    }
+    .cima{
+        top: 3.5vh;
+    }
 }

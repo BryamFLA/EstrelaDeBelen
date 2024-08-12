@@ -4,63 +4,81 @@ let pinduricoExtraAberto = false;
 
 export function inverterPinduricos(pindurico) {
     let pinduricoAberto;
-    switch(pindurico){
+    switch (pindurico) {
         case 'cruz':
             pinduricoAberto = pinduricoCruzAberto;
-        break;
+            break;
         case 'centro':
             pinduricoAberto = pinduricoMeioAberto;
-        break;
+            break;
         case 'extra':
             pinduricoAberto = pinduricoExtraAberto;
-        break;
+            break;
     }
+    if (pinduricoAberto) {
+        closePinduricos(pindurico);
+    } else {
+        openPinduricos(pindurico);
+    }
+}
 
+export function closePinduricos(pindurico) {
     let seta = document.getElementById(`seta-${pindurico}`);
     let op = document.getElementById(`op-${pindurico}`);
     let divs = op.querySelectorAll('div');
 
-    if (pinduricoAberto) {
-        op.style.height = '12vh';
-        op.style.bottom = '0';
-        op.style.opacity = '0';
+    op.style.height = '12vh';
+    op.style.bottom = '0';
+    op.style.opacity = '0';
 
-        seta.style.clipPath = 'polygon(0 45%, 50% 25%, 100% 45%, 100% 55%, 50% 35%, 0 55%)';
+    seta.style.clipPath = 'polygon(0 45%, 50% 25%, 100% 45%, 100% 55%, 50% 35%, 0 55%)';
 
-        divs.forEach(div => {            
-            div.style.opacity = '0';
-            div.style.position = 'absolute';
-        });
-    } else { 
-        op.style.height = '65vh';
-        op.style.bottom = '16vh';
-        op.style.zIndex = '5';
-        op.style.opacity = '1';
-
-        seta.style.clipPath = 'polygon(0 45%, 50% 65%, 100% 45%, 100% 55%, 50% 75%, 0 55%)';
-
-        divs.forEach(div => {
-            div.style.position = 'relative';
-            div.style.marginTop = '1vw';
-            div.style.opacity = '1';
-        });
-
-    }
-
-    switch(pindurico){
+    divs.forEach(div => {
+        div.style.opacity = '0';
+        div.style.position = 'absolute';
+    });
+    switch (pindurico) {
         case 'cruz':
-            pinduricoCruzAberto = !pinduricoAberto;
-        break;
+            pinduricoCruzAberto = false;
+            break;
         case 'centro':
-            pinduricoMeioAberto = !pinduricoAberto;
-        break;
+            pinduricoMeioAberto = false;
+            break;
         case 'extra':
-            pinduricoExtraAberto = !pinduricoAberto;
-        break;
+            pinduricoExtraAberto = false;
+            break;
+    }
+}
+function openPinduricos(pindurico) {
+    let seta = document.getElementById(`seta-${pindurico}`);
+    let op = document.getElementById(`op-${pindurico}`);
+    let divs = op.querySelectorAll('div');
+    op.style.height = '65vh';
+    op.style.bottom = '16vh';
+    op.style.zIndex = '5';
+    op.style.opacity = '1';
+
+    seta.style.clipPath = 'polygon(0 45%, 50% 65%, 100% 45%, 100% 55%, 50% 75%, 0 55%)';
+
+    divs.forEach(div => {
+        div.style.position = 'relative';
+        div.style.marginTop = '1vw';
+        div.style.opacity = '1';
+    });
+    switch (pindurico) {
+        case 'cruz':
+            pinduricoCruzAberto = true;
+            break;
+        case 'centro':
+            pinduricoMeioAberto = true;
+            break;
+        case 'extra':
+            pinduricoExtraAberto = true;
+            break;
     }
 }
 
-export function createPindurico(pindurico, ops){
+export function createPindurico(pindurico, ops) {
 
     let caixa = document.getElementById(`${pindurico}-caixa`);
     let divSelecionada = document.createElement('div');
@@ -75,11 +93,11 @@ export function createPindurico(pindurico, ops){
     let opApresentation = document.getElementById(`produto-pindurico-${pindurico}`)
     opApresentation.style.backgroundColor = ops[0];
 
-    for (let i = 0; i < ops.length ; i++){
+    for (let i = 0; i < ops.length; i++) {
         let div = document.createElement('div');
         div.style.backgroundColor = ops[i];
 
-        div.addEventListener('click', ()=>{
+        div.addEventListener('click', () => {
             opSelecionada.style.backgroundColor = ops[i];
             opApresentation.style.backgroundColor = ops[i];
             inverterPinduricos(pindurico);

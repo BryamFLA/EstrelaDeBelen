@@ -14,9 +14,19 @@ import { pindurico_extra } from './js/db/pindurico_extra.js';
 
 import {sendMessage} from './js/mensagem.js';
 
-window.attMenu = attMenu;
+import { expandCompress } from './js/seletores.js';
+import { showCorrentes } from './js/seletores.js';
+import { showStones } from './js/seletores.js';
+
+import { closePinduricos } from './js/pindurico.js';
+
+window.attMenu = () => attMenu(closePinduricos);
 window.sendMessage = sendMessage;
 window.inverterPinduricos = inverterPinduricos;
+
+window.expandCompress = expandCompress;
+window.showCorrentes = showCorrentes;
+window.showStones = showStones;
 
 document.addEventListener("DOMContentLoaded", function () {
     createCores(cores);

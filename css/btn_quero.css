@@ -25,3 +25,18 @@
     height: 7vh;
     font-size: 1.7vw;
 }
+
+@media (max-width: 425px) {
+    #btn-euquero{
+        width: 40vw;
+        left: 30vw;
+        font-size: 4vw;
+    }
+    #btn-euquero:hover{
+        left: 30vw;
+        top: 10vh;
+        width: 40vw;
+        height: 6vh;
+        font-size: 4vw;
+    }
+}

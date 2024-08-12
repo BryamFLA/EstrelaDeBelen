@@ -1,0 +1,21 @@
+#controller-produto{
+    display: none;
+}
+
+@media (max-width: 425px) {
+    #controller-produto{
+        z-index: 10;
+        position: absolute;
+        top: 18vh;
+        width: 90vw;
+        margin: 0 5vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #controller-produto i{
+        font-size: 5.5vw;
+        color: gray;
+    }
+}
